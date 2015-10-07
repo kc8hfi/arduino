@@ -7,6 +7,10 @@ void setup()
      Serial.begin(115200);
      inputString = "";
      stringComplete = false;
+     
+     //turn off the led
+     pinMode(13,OUTPUT);
+     digitalWrite(13,LOW);
 }
 
 void loop()

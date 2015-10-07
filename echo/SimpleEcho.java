@@ -89,6 +89,7 @@ public class SimpleEcho
                          //any of the new line stuff
                          line = r.readLine();
                          System.out.println("read line with " + line.length() + " characters: \"" + line + "\" ");
+                         
                     }
                     catch(IOException e)
                     {
