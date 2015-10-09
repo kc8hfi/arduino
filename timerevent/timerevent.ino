@@ -3,7 +3,7 @@ byte light = 13;
  
 void setup()
 {
-     Serial.begin(115200);
+     Serial.begin(9600);
      
      pinMode(light,OUTPUT);
      //make sure the light is off
