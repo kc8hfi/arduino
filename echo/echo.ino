@@ -11,6 +11,8 @@ void setup()
      //turn off the led
      pinMode(13,OUTPUT);
      digitalWrite(13,LOW);
+     
+     Serial.println("arduino ready");
 }
 
 void loop()
