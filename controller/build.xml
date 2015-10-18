@@ -1,0 +1,29 @@
+<project name="controller" default="run" basedir=".">
+     <path id="build_classpath">
+          <fileset dir=".">
+               <include name="*.jar"/>
+          </fileset>
+          <path location="."/>
+     </path>
+     
+     <!-- compile everything -->
+     <target name="build" description="compile the program">
+          <javac includeantruntime="false" srcdir="." >
+               <classpath refid="build_classpath" />
+          </javac>
+     </target>
+     
+     <!-- run the program -->
+     <target name="run" depends="build" description="run the program" >
+          <java classname="controller" fork="true">
+               <classpath refid="build_classpath" />
+          </java>
+     </target>
+     
+     <!-- clean up everything -->
+     <target name="clean" description="clean the build">
+          <delete>
+               <fileset dir="." includes="*.class"/>
+          </delete>
+     </target>
+</project>
