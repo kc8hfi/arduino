@@ -79,9 +79,19 @@ public class thewindow extends JFrame
           clear.setActionCommand("clear");
           irCodePanel.add(clear,BorderLayout.PAGE_END);
 
+          JToggleButton lightBulb = new JToggleButton("Toggle light bulb");
+          lightBulb.setActionCommand("light");
+          
+          JPanel toggleLightPanel = new JPanel();
+          toggleLightPanel.setBorder(BorderFactory.createTitledBorder("Light bulb"));
+          
+          toggleLightPanel.add(lightBulb);
+          
           
           contentPane.add(echoPanel);
           contentPane.add(Box.createRigidArea(new Dimension(0, 20))); //width,height
+          contentPane.add(toggleLightPanel);
+          contentPane.add(Box.createRigidArea(new Dimension(0, 20))); //width,height          
           contentPane.add(colorGrid);
           contentPane.add(Box.createRigidArea(new Dimension(0, 20)));
           contentPane.add(irCodePanel);

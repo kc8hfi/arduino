@@ -127,6 +127,10 @@ void loop()
                digitalWrite(blue,!digitalRead(blue));
                //Serial.println(inputString);
           }
+          else if (inputString == "light")
+          {
+               digitalWrite(relay,!digitalRead(relay));
+          }
           else //if(inputString == "send")
           {
                Serial.println("you said \"" + inputString+ "\"");
