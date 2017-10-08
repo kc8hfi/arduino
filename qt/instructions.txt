@@ -1,0 +1,5 @@
+This is is a program written in QT that talks to the 
+arduino through the serial port. 
+
+This program uses the echo sketch.  Load the echo.ino sketch
+from the echo directory to be able to use this qt program.
