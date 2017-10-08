@@ -1,15 +1,16 @@
-1.  Go here and download RXTX windows 64bit, 
-http://fizzed.com/oss/rxtx-for-java
+This is some java programs that utilize the echo sketch. 
 
-2.  extract all the files, 
-3.  go into the extracted file location
-4.  There are 3 files you need:  rxtxParallel.dll, rxtxSerial.dll and RXTXcomm.jar
-5.  copy all 3 of these files into your project directory
-6.  To compile:  javac -cp rxtxcomm.jar;. <name of your java file>
-7.  To run:  java -cp rxtxcomm.jar;. <name of your program>
+You will need to load the echo.ino program to your arduino first.  Then you will need to change 
+the serial port listed in each one of the java programs to match whatever serial port
+your arduino is plugged into.
 
-To add the classpath for dr. java
-1.  click edit->preferences
-2.  resource locations, extra classpath,  click add
-3.  navigate to where you copied that rxtxcomm.jar file and select it
-4.  click select, then click ok
+jssc_echo.java - very basic program.  The echo sketch sends the string
+"arduino ready".  This program captures that input and prints it out on the screen.
+
+jssc_portlistjava - this simple program prints out on the screen all the 
+available serial ports
+
+jssc_fancyecho.java - a gui program that gives the user a text box to enter in some text
+and a button to send the string to the arduino.  It also has a label that displays
+the data that comes back from the arduino
+
