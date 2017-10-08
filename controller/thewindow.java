@@ -82,10 +82,14 @@ public class thewindow extends JFrame
           JToggleButton lightBulb = new JToggleButton("Toggle light bulb");
           lightBulb.setActionCommand("light");
           
+          JToggleButton outlet = new JToggleButton("Toggle outlet");
+          outlet.setActionCommand("outlet");
+          
           JPanel toggleLightPanel = new JPanel();
-          toggleLightPanel.setBorder(BorderFactory.createTitledBorder("Light bulb"));
+          toggleLightPanel.setBorder(BorderFactory.createTitledBorder("Light bulb and outlet"));
           
           toggleLightPanel.add(lightBulb);
+          toggleLightPanel.add(outlet);
           
           
           contentPane.add(echoPanel);
@@ -104,6 +108,8 @@ public class thewindow extends JFrame
           blue.addActionListener(handler);
           echo.addActionListener(handler);
           clear.addActionListener(handler);
+          lightBulb.addActionListener(handler);
+          outlet.addActionListener(handler);
           
           portlistener = new myportlistener(this);
           askForPort();
