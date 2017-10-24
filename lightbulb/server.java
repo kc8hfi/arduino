@@ -44,7 +44,7 @@ public class server
           String port = "/dev/ttyACM0";
           String consoleReaderName = "Reader";
           
-          String filename = "/var/www/mainsite/testsite/data.txt";
+          String filename = "/var/www/html/data.txt";
           File file = new File(filename);
           
           serialPort = new SerialPort(port);
@@ -113,7 +113,7 @@ private static class PortReader implements SerialPortEventListener
      
      public void writeToFile(String s)
      {
-          String filename = "/var/www/mainsite/testsite/fromarduino.txt";
+          String filename = "/var/www/html/fromarduino.txt";
           try
           {
                FileWriter f = new FileWriter(filename);
