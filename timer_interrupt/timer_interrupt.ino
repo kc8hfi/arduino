@@ -12,12 +12,12 @@ void setup()
      
      /*
       * compare match register values
-      * 1 second  = 15625
-      * 2 seconds = 31250
-      * 4 seconds = 62500
+      * 1 second  = 15624
+      * 2 seconds = 31249
+      * 4 seconds = 62499
       * prescalar, 1,8,64,256,1024
       
-      * 16 million/(time in hz)(prescalar)
+      * (16 million/(time in hz)(prescalar))-1
       */
 
      
